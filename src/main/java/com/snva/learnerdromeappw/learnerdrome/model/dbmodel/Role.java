@@ -19,4 +19,12 @@ public class Role {
     private  String _id;
     @Indexed
     private  String roleName;
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "_id='" + _id + '\'' +
+                ", roleName='" + roleName + '\'' +
+                '}';
+    }
 }

@@ -1,26 +1,20 @@
 package com.snva.learnerdromeappw.learnerdrome.model.dbmodel;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText;
-import lombok.Data;
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.DBRef;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @Getter
 @Setter
 @NoArgsConstructor
+@Accessors(chain = true)
 
-public class User {
+@JacksonXmlRootElement
+public class UserXml {
 
     String _id;
 

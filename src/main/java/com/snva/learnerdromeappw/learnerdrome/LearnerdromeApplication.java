@@ -26,9 +26,6 @@ public class LearnerdromeApplication  {
 	CommandLineRunner init(RoleRepository roleRepository, UserRepository userRepository) {
 		return args -> {
 
-
-
-
 			Role adminRole= roleRepository.findByRoleName("Admin");
 			if (adminRole==null){
 				adminRole= new Role();
